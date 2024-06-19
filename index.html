@@ -75,8 +75,8 @@
     <!--fin de iconos cambio Claro / Oscuro-->
 
     <!--Header-->
-    <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#"><img src="img/logo-design.png" alt="" width="48"></a>
+    <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow text-center" data-bs-theme="dark">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#"><img src="img/dashboard.png" alt="" width="48"></a>
 
       <ul class="navbar-nav flex-row d-md-none">
         <li class="nav-item text-nowrap">
@@ -111,7 +111,7 @@
               <ul class="nav flex-column vh-100">
                 <li class="nav-item" >
                   <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
-                  <i class="bi bi-house-door-fill"></i>
+                    <img src="img/home-button.png" alt="Inicio">
                     Aplicaciones Js
                   </a>
                 </li>
@@ -165,11 +165,33 @@
               <div class="col-md-10 py-5">
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                     <h2>Zapateria</h2>
-                    <p>Diseñar una funcion en Javascript para un almacen de zapatos que tiene una promocion de descuento para vendel al mayor, esta dependera del numero de zapatos que se compren. <br>
-                    Si son menos de 10 no hy descuento. <br>
-                    Si son mas o igual de diez y menos de 20, se les dara un 10% de descuento sobre el total de la compra. <br>
-                    Si el numero de zapatos es mayor de 20, pero menor de 30 se le otorgara un 20% de descuento. <br>
-                    Y si son mas de 30 zapatos se otorgara un 40% de descuento.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Descripción...  <i class="bi bi-info-square"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Zapateria</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Diseñar una función en JavaScript para un almacén de zapatos que tiene una promoción de descuento para vender al mayor, esta dependerá del número de zapatos que se compren.  <br>
+                              Si son menos de 10 no hay descuento. <br>
+                              Si son más o igual de diez y menos de 20, se les dará un 10% de descuento sobre el total de la compra. <br>
+                              Si el número de zapatos es mayor de 20, pero menor de 30 se le otorgara un 20% de descuento. <br>
+                              Y si son más de 30 zapatos se otorgará un 40% de descuento.</p>
+                              <img src="img/zapateria.png" alt="">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
                       <label for="Cantidad">Cantidad</label>
@@ -194,12 +216,37 @@
                 
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                     <h2>Menor o Mayor de Edad</h2>
-                    <p>Diseñar un algoritmo que identifique si una persona es niño, joven, adulto o adulto mayor.<br>
-                      Para lo cual debe leer su edad.<br>
-                      Si la edad es menor o igual a 12 años, el algoritmo debe indicar "Eres un niño"<br>
-                      Si la edad es mayor a 12 años y menor o igual a 40 años, el algoritmo debe indicar "Eres un joven"<br>
-                      Si la edad es mayor a 40 años y menor o igual a 60 años, el algoritmo debe indicar "Eres un adulto"<br>
-                      Si la edad es mayor a 60 años el algoritmo debe indicar "Eres un adulto mayor"</p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                      Descripción... <i class="bi bi-info-square"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Edad</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Diseñar un algoritmo que identifique si una persona es niño, joven, adulto o adulto mayor. <br>
+                              Para lo cual debe leer su edad. <br>
+                              Si la edad es menor o igual a 12 años, el algoritmo debe indicar "Eres un niño" <br>
+                              Si la edad es mayor a 12 años y menor o igual a 40 años, el algoritmo debe indicar "Eres un joven"<br>
+                              Si la edad es mayor a 40 años y menor o igual a 60 años, el algoritmo debe indicar "Eres un adulto" <br>
+                              Si la edad es mayor a 60 años el algoritmo debe indicar "Eres un adulto mayor" </p>
+                              <img src="img/age-range (256px).png" alt="">
+        
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control" id="edad" placeholder="Primero Número">
                       <label for="Edad">Digite su Edad</label>
@@ -220,15 +267,38 @@
                 
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                     <h2>Formula IMC</h2>
-                    <p>Diseñe una funcion que simule la formula para vallidar el indice de masa corporal <br>
-                    Si el IMC es menor a 18.5 estara en <strong>"Bajo Peso"</strong><br>
-                    Si el IMC esta entre 18.5 y 24.9 estara en <strong>"Peso Normal"</strong><br>
-                    Si el IMC esta entre 25 y 29.9 estara en <strong>"Sobrepeso"</strong><br>
-                    Si el IMC esta entre 30 y 34.9 estara en <strong>"Obesidad I"</strong><br>
-                    Si el IMC esta entre 35 y 39.9 estara en <strong>"Obesidad II"</strong><br>
-                    Si el IMC esta entre 40 y 49.9 estara en <strong>"Obesidad III"</strong><br>
-                    Si el IMC es superior a 50 estara en <strong>"Obesidad IV"</strong><br>
-                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                      Descripción... <i class="bi bi-info-square"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Formula IMC</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Diseñe una función que simule la fórmula para validar el índice de masa corporal <br>
+                              Si el IMC es menor a 18.5 estará en <strong>"Bajo Peso"</strong><br>
+                              Si el IMC esta entre 18.5 y 24.9 estará en <strong>"Peso Normal"</strong><br>
+                              Si el IMC esta entre 25 y 29.9 estará en <strong>"Sobrepeso"</strong><br>
+                              Si el IMC esta entre 30 y 34.9 estará en <strong>"Obesidad I"</strong><br>
+                              Si el IMC esta entre 35 y 39.9 estará en <strong>"Obesidad II"</strong><br>
+                              Si el IMC esta entre 40 y 49.9 estará en <strong>"Obesidad III"</strong><br>
+                              Si el IMC es superior a 50 estará en <strong>"Obesidad IV"</strong><br>
+                              </p>
+                              <img src="img/imc.png" width="384 px" alt="">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control" id="peso" placeholder="Peso">
                       <label for="Peso">Peso (kg)</label>
@@ -252,14 +322,37 @@
               <div class="col-md-10 py-5">
                 
                   <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                    <h2>Presion Arterial</h2>
-                    <p>Diseñe un algoritmo que simule la calificacion de presion arterial.<br>
-                    <strong>Baja</strong> Menor a 90. <br>
-                    <strong>Normal</strong> Menor a 120. <br>
-                    <strong>Prehipertension</strong> Entre 120 y 139.<br>
-                    <strong>Alta: Hipertension Fase 1</strong> Entre 140 y 159.<br>
-                    <strong>Alta: Hipertension Fase 2</strong> Mayor a 160.<br>
-                    </p>
+                    <h2>Presión Arterial</h2>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-primary m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                      Descripción... <i class="bi bi-info-square"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Presión Arterial</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Diseñe un algoritmo que simule la calificación de presión arterial. <br>
+                              <strong>Baja</strong> Menor a 90. <br>
+                              <strong>Normal</strong> Menor a 120. <br>
+                              <strong>Prehipertensión</strong> Entre 120 y 139. <br>
+                              <strong>Alta: Hipertensión Fase 1</strong> Entre 140 y 159. <br>
+                              <strong>Alta: Hipertensión Fase 2</strong> Mayor a 160. <br>
+                              </p>
+                              <img src="img/PresionArterial.png" width="384 px" alt="">
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                     <div class="form-floating mb-3">
                       <input type="number" class="form-control" id="presion" placeholder="Primero Número">
                       <label for="Presion">Presion Arterial Actual</label>
@@ -317,7 +410,14 @@
       </div>
     </div>
     <!--Fin Contenedor Fluido-->
-    
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright: Vicab
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
     <!---Boostrap 5.3 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!--Dashboard JS-->

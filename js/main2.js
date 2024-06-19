@@ -11,6 +11,10 @@ document.getElementById('form_PesoIdeal').addEventListener('submit' , function(e
     let pesoIdeal, imc, calificacion, deficit;
 
     //Se realiza la formula para los diferentes sexos
+    if (isNaN(edad2) || isNaN(pesoActual) || isNaN(estatura)){
+        alert("Por favor ingrese los valores para calcular!!")
+    }else{
+
     if (sexo === 'Masculino'){
         pesoIdeal = estatura - 100 -((estatura - 150)/ 4);
 
@@ -20,6 +24,7 @@ document.getElementById('form_PesoIdeal').addEventListener('submit' , function(e
     } else { 
         document.getElementById('resultado').innerHTML = '<div class="alert alert-danger">Por favor, seleccione un sexo válido.</div>';
         return;
+    }
     }
     estatura=estatura/100; //convertir estatura a metros
     imc = pesoActual / (estatura*estatura);
